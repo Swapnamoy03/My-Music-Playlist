@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/styling_JS.js"></script>
+    <title>My PlayList</title>
+</head>
+
+<body onload="OnLoad()">
+    <div class="fullBody">
+        <div class="userDetails">
+            <img class="profile" src="img/user.png" alt="User Photo">
+            <div class="upperHeadings">
+                <div class="heading">My Playlist</div>
+                <div class="icons">
+                    <img name="FullPlaylist" class="fav" src="img/FavoriteON.png" alt="Selected"
+                        onclick="ChangeFavorite(name)">
+                </div>
+                <div class="icons">
+                    <img class="fav" src="img/Shuffle.png" alt="Not Selected">
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/BlindingLights.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Blinding Light </h1>
+                        <div class="Singer"> (The Weekend)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="BlindingLihts" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Blinding Lights" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Memories.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Memories </h1>
+                        <div class="Singer"> (Maroon 5)</div>
+                    </div>
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img class="fav" name="Memories" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Memories" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/HymnForTheWeekend.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Hymn For The Weekend </h1>
+                        <div class="Singer"> (Coldplay)</div>
+                    </div>
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Hymn For The Weekend" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Hymn For The Weekend" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Payphone.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Payphone </h1>
+                        <div class="Singer"> (Maroon 5)</div>
+                    </div>
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Payphone" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Payphone" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Starboy.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Starboy </h1>
+                        <div class="Singer"> (The Weekend)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Starboy" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class=" MusicPlayIcon">
+                            <img name="Starboy" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/faded.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Faded </h1>
+                        <div class="Singer"> (Alan Walker)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Faded" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Faded" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/HeatWaves.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Heat Waves </h1>
+                        <div class="Singer"> (Glass Animals)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="HeatWaves" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Heat Waves" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Demons.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Demons </h1>
+                        <div class="Singer"> (Imagine Dragons)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Demons" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Demons" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/BeautifulMistakes.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Beautiful Mistakes </h1>
+                        <div class="Singer"> (Maroon 5 , Megan Thee Stallion)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="BeautifulMistakes" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Beautiful Mistakes" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/SomethingJustLikeThis.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Something Just Like This </h1>
+                        <div class="Singer"> (The Chainsmokers , Coldplay)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="SomethingJustLikeThis" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Something Just Like This" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/WhateverItTakes.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Whatever It Takes </h1>
+                        <div class="Singer"> (Imagine Dragons)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="WhateverItTakes" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Whatever It Takes" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Natural.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Natural </h1>
+                        <div class="Singer"> (Imagine Dragons)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Natural" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Natural" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Closer.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Closer </h1>
+                        <div class="Singer"> (The Chainsmokers , Halsey)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Closer" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Closer" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/AllTimeLow.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">All Time Low </h1>
+                        <div class="Singer"> (Jon Bellion , Stormzy)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="AllTimeLow" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="All Time Low" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/TheOne.jpg" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">The One </h1>
+                        <div class="Singer"> (The Chainsmokers)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="TheOne" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="The One" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/LetMeDownSlowly.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Let Me Down Slowly </h1>
+                        <div class="Singer"> (Alec Benjamin)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="LetMeDownSlowly" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Let Me Down Slowly" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/Comethru.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Comethru </h1>
+                        <div class="Singer"> (Jeremy Zucker)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="Comethru" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Comethru" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="musicCards">
+            <div class="wrapper">
+                <div class="MusicImg">
+                    <img src="img/CountingStars.png" alt="Music Album Photo">
+                </div>
+                <div class="MusicName">
+                    <div class="Name">
+                        <h1 class="SongName">Counting Stars </h1>
+                        <div class="Singer"> (OneRepublic)</div>
+                    </div>
+
+                </div>
+                <div class="MusicIcons">
+                    <div class="Interaction">
+                        <div class="Favourites">
+                            <img name="CountingStars" class="fav" src="img/FavoriteOFF.png" alt="Not Selected"
+                                onclick="ChangeFavorite(name)">
+                        </div>
+                        <div class="MusicPlayIcon">
+                            <img name="Counting Stars" class="PlayPause" src="img/Play.png" alt="Play Audio"
+                                onclick="ChangePlayPause(name)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="SeeMore">
+            <a href="#" class="Text" onclick="LoadMore()">See More</a>
+        </div>
+    </div>
+</body>
+
+</html>

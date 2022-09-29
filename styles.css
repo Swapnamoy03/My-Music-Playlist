@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Inter+Tight:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: linear-gradient(-50deg, #188B02, #156106, #082E01);
+    font-family: 'Inter Tight', sans-serif;
+    letter-spacing: 2px;
+}
+
+.fullBody {
+    padding: 1%;
+}
+
+.userDetails {
+    margin: 2%;
+    background-color: none;
+}
+
+.userDetails img {
+    width: 110px;
+    height: 110px;
+    /*border-radius: 50%;*/
+    position: relative;
+    left: 3%;
+}
+
+/*.userDetails .profile {
+    border: 2px solid black;
+}*/
+
+/*.upperHeadings {
+    max-width: 80%;
+    display: inline-block;
+}*/
+
+.heading {
+    font-size: 70px;
+    display: inline-block;
+    margin: 5%;
+    color: #0E0E0E;
+}
+
+.icons {
+    display: inline-block;
+    font-size: 65px;
+    position: relative;
+    left: 51%;
+}
+
+.musicCards {
+    /*border-radius: 0px 0px 2px 2px;*/
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.1),
+        15px 15px 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    visibility: visible;
+}
+
+/*.wrapper {
+    padding: px;
+}*/
+
+.MusicImg {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.MusicImg img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.MusicName {
+    display: inline-flex;
+    position: relative;
+    left: 2%;
+}
+
+.Name {
+    margin: 3px;
+    position: relative;
+    bottom: 28px;
+}
+
+.SongName {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: Bold;
+    font-style: normal;
+    font-family: 'Inconsolata', monospace;
+    color: #151501;
+}
+
+.Singer {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 3px;
+    color: #211515;
+}
+
+
+.MusicIcons {
+    margin: 6px;
+    display: inline-flex;
+    position: relative;
+    float: right;
+    top: 15px;
+
+}
+
+
+.Favourites,
+.MusicPlayIcon,
+.icons {
+    display: inline-block;
+    font-size: 25px;
+    /*padding: 0px 8px;*/
+}
+
+.Favourites img,
+.MusicPlayIcon img,
+.icons img {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.SeeMore {
+    font-size: 28px;
+    text-align: center;
+    margin: 15px;
+}
+
+.SeeMore a {
+    text-decoration: none;
+    color: #05353D;
+    transition: 0.3s;
+}
+
+.SeeMore a:hover {
+    color: #01252B;
+}
